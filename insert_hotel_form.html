@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insertar Hotel</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/validate.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Agencia de Viajes</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="insert_vuelo_form.html">Insertar Vuelo</a></li>
+            <li><a href="insert_hotel_form.html">Insertar Hotel</a></li>
+            <li><a href="php/mostrar_reservas.php">Mostrar Reservas</a></li>
+            <li><a href="php/consulta_avanzada.php">Consulta Avanzada</a></li>
+        </ul>
+    </nav>
+    <h2>Insertar Hotel</h2>
+    <form name="hotelForm" action="php/insert_hotel.php" onsubmit="return validateForm('hotelForm')" method="post">
+        Nombre: <input type="text" name="nombre"><br>
+        Ubicación: <input type="text" name="ubicación"><br>
+        Habitaciones Disponibles: <input type="number" name="habitaciones_disponibles"><br>
+        Tarifa por Noche: <input type="text" name="tarifa_noche"><br>
+        <input type="submit" value="Insertar Hotel">
+    </form>
+</body>
+</html>

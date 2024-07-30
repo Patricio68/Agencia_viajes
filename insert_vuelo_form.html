@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insertar Vuelo</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/validate.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Agencia de Viajes</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="insert_vuelo_form.html">Insertar Vuelo</a></li>
+            <li><a href="insert_hotel_form.html">Insertar Hotel</a></li>
+            <li><a href="php/mostrar_reservas.php">Mostrar Reservas</a></li>
+            <li><a href="php/consulta_avanzada.php">Consulta Avanzada</a></li>
+        </ul>
+    </nav>
+    <h2>Insertar Vuelo</h2>
+    <form name="vueloForm" action="php/insert_vuelo.php" onsubmit="return validateForm('vueloForm')" method="post">
+        Origen: <input type="text" name="origen"><br>
+        Destino: <input type="text" name="destino"><br>
+        Fecha: <input type="date" name="fecha"><br>
+        Plazas Disponibles: <input type="number" name="plazas_disponibles"><br>
+        Precio: <input type="text" name="precio"><br>
+        <input type="submit" value="Insertar Vuelo">
+    </form>
+</body>
+</html>
